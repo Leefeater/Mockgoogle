@@ -50,7 +50,7 @@ div.search img {
 	padding:142px 0 24px 0;
 	margin:0 auto;
 }
-div.search input {
+.search input {
 	width:600px;
 	margin: 0 auto;
 	padding: 5px;
@@ -78,40 +78,67 @@ div.buttons button {
 	cursor:pointer;
 
 }
-div#footer {
+div.footer {
 	position:absolute;
 	bottom:0px;
 	width:100%;
 	border-top:1px solid #e4e4e4;
 	background-color: #f2f2f2;
 }
-ul#left {
+ul.left {
 	float:left;
 	margin: 10px, 0px;
 }
-ul#left li {
+ul.left li {
 	display:inline;
 	padding-left: 20px;
 }
-ul#left li a {
+ul.left li a {
 	text-decoration:none;
 	color:#666;
 }
-ul#left li a:hover{
+ul.left li a:hover{
 	text-decoration:underline;
 }
-ul#right {
+ul.right {
 	float:right;
 	margin:10px, 0px;
 }
-ul#right li {
+ul.right li {
 	display:inline;
 	padding-right:20px;
 }
-ul#right li a {
+ul.right li a {
     text-decoration:none;
 	color:#666;
 }
-ul#right li a:hover {
+ul.right li a:hover {
 	text-decoration:underline;
+}
+
+@media (max-width: 638px) {
+	.search input {
+		margin:0 auto;
+		width:85%;
+	}
+}
+@media all and (max-width: 575px) {
+	.search input {
+		margin:0 auto;
+		width:85%;
+	}
+	ul.left {
+		float:none;
+	}
+	ul.right {
+		display:block;
+		float:none;
+	}
+	.footer {
+		text-align:center;
+	}
+	#metal,
+	#share {
+		display:none;
+	}
 }
